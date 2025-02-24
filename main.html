@@ -1,250 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Main</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ROSE</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b50b1f9f9e.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
-  <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <script src="/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-    <!-- navbar -->
-    <header class="header" id="header">
-        <nav class="navbar-wrapper">
-              
-          <img src="resim/resim/Rise Logo.png"
-          />
- 
-            <img src="resim/resim/Rose Logo.png"
-           />
-         
-           <ul class="menu-list">
-              <li class="navbar-menu-item">
-                <a id="game info" href="#whowe">GAME INFO</a> 
-                  </li>
-              
-              <li class="navbar-menu-item">
-                 <a id="media" href="#contact">MEDIA</a>
-                  </li>
 
-              <li class="navbar-menu-item">
-                <a id="news" href="#updates" >NEWS</a>
-                  </li>
+<!-- navbar -->
 
-              <li class="navbar-menu-item">
-                    <a id="community" href="#contact" >COMMUNITY</a>
-                      </li>
-            
-           </ul>
-           <!-- <div class="navbar-link">
-            <a href="mmm"><img src="resim/resim/Play now Button.png"></a>
-          </div>        -->
-         </nav>
-      </header>
-      <!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+	<div class="container-fluid">  
+		<a class="navbar-brand">
+		<img src="resim/Rise Logo.png"
+		/>
+		  <img src="resim/Rose Logo.png"
+		 /></a>
+		 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+		 data-target="#navbarResponsive">
+	<span class="navbar-toggler-icon"></span>
+ </button>
 
-      <!-- giriş ekranı -->
-    <div class="main-screen">
-          <div class="mainscreenContainer">
-            
-                <img
-                  src="resim/resim/Rose_KeyArt_V01.jpg"
-                 
-                />
-          
-               <div class="mainscreens-link">
-                  <a href="mmm"><img src="resim/resim/Wishlist Button.png"></a>
-               </div>
-
-            </div>
-        </div>
-      
-      <!-- giriş ekranı -->
-
-      <!-- oyun sayfası -->
-
-    <section class="GameMain" id="updates">
-        <div class="GameHeader">
-          <h1 id="the lates">THE LATES</h1>
-          
-        </div>
-        <ul class="Game">
-          <li class="GamePic">
-            
-            <div class="GamePicFrame">
-                <img
-                  src="resim/resim/1.png"
-                  alt="picture"
-                />
-              </div>
-            
-                <h5 id="date">08/08/2023</h5>
-                <h4 id="game update">GAME UPDATE</h4>
-          </li>
-          <li class="GamePic">
-          <div class="GamePicFrame">
-                <img
-                  src="resim/resim/2.png"
-                  alt="picture"
-                />
-          </div>
-                <h5 id="date">08/08/2023</h5>
-                <h4 id="game update">GAME UPDATE</h4>
-          </li>
-              <li class="GamePic">
-                <div class="GamePicFrame">
-                <img
-                  src="resim/resim/3.png"
-                  alt="picture"
-                />
-                </div>
-            
-                <h5 id="date">08/08/2023</h5>
-                <h4 id="game update">GAME UPDATE</h4>
-          
-              </li>
-           
-        </ul>
-      </section>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	<ul class="navbar-nav ml-auto">
+	
+   <li class="nav-item">
+	<a class="nav-link" href="index.html">HOME</a> 
+	  </li>
   
-      <!-- oyun sayfası -->
+  <li class="nav-item">
+	 <a class="nav-link" href="#news">NEWS</a>
+	  </li>
 
-        <!-- resim ekranı -->
-    <div class="main-screen-pic">
-        <div class="container-screen2">
-              <img
-              src="resim/resim/BackGround_Tasarm.png"
-             
-            />
-           </div>
-           <div class="mainscreens-link2">
-            <a href="mmm"><img src="resim/resim/add to wishlist.PNG"></a>
-           </div>
-       
+  <li class="nav-item">
+	<a class="nav-link" href="#about" >ABOUT GAME</a>
+	  </li>
 
-  </div>
-       
+  <li class="nav-item">
+		<a class="nav-link" href="#social" >ABOUT US</a>
+		  </li>
+
+  <li class="nav-link">
+				<a href="https://store.steampowered.com/app/2657160/ROSE" class="btn btn-primary">ADD TO WISHLIST</a>
+			  </li>
+	</ul>
+	
+	</div>
+	</div>
+	</nav>
+
+<!--- resim ekranı -->
+
+<div id="slides" class="carousel-slide" data-ride="carousel">
+	<!-- <ul class="carousel-indicators">
+		<li data-target="slides" data-slide-to="0" class="active"></li>
+	</ul> -->
       
-      <!-- resim ekranı -->
-
-       <!-- tanıtım -->
-    <div class="introducing--section" id="whowe">
-      
-      <div class="introducing--content">
-                       
-           <h1 id="introducing">LOREM IPSUM</h1>
-        
-          <p id="tanıtımAçıklama">
-            Kızıl Kobra adlı hükümet dünyayı ele geçirir.
-            Bu savaştan kaçmak isteyen bir gazeteci kızını kaybeder.
-            Kızını bulmak ve savaştan kurtulmak için bu dünyaya giriş yap.
-          </p>
-        
-            
-          <div class="mainscreens-link3">
-            <a href="mmm"><img src="resim/resim/add to wishlist.PNG"></a>
-         </div>
-
-      </div>
-         <div class="introducing--img">
-          <img src="resim/resim/ConceptCity_v02.png" class="left">
-         </div>
-        
-        </div>
-    
-          </div>
-      <!-- tanıtım -->
-  
-
-      <!-- resim ekranı2 -->
-      <div class="main-screen-pic1">
-        <div class="container-screen3">
-            <img
-            src="resim/resim/Crimson_Town_aRT.png"
-           
-          />
-        </div>
-        <div class="mainscreens-link4">
-          <a href="mmm"><img src="resim/resim/w"></a>
-       </div>
-
-
+	<div class="carousel-inner">
+	<div class="carousel-item active">
+	<img src="resim/Main_01_Gorsel.png">
+	<div class="carousel-caption">
+		<a href="https://store.steampowered.com/app/2657160/ROSE"><img src="resim/Wishlist Button1.png"></a>
+	</div>
+	</div>
+   
+	</div>
+   
 </div>
 
-<!-- resim ekranı2 -->
+<!--- oyun tanıtımı -->
+<div class="container-fluid padding" id="news">
+	<div class="row welcome text-center">
+	<div class="col-12">
+		<h2 class="display-3">GAME NEWS</h2>
+	</div>
+		
+</div>
+</div>
 
-   <!-- footer -->
- <section class="footer_content" id="contact">
-  <div class="footer-join">
-    <p>JOIN US ON</p>
-  </div>
+<div class="container">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<a href="news-page1.html">
+			<img class="card-img-top" src="resim/anasayfaunreal.png"></a>
+				<div class="card-body"> 
+					<p class="card-title">RECARDING LEVEL AND SURROUNDING DESIGN</p>
+					<h3 class="card-text">DESIGN PROCESS</h3>
+				</div>
+		 </div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<a href="news-page2.html">
+			<img class="card-img-top" src="resim/Haber_Baslik_Gorsel_02.png"></a>
+			<div class="card-body"> 
+				<p class="card-title">ABOUT THE FORMATION OF THE TEAM</p>
+				<h3 class="card-text">TEAMING PROCESS</h3>
+			</div>
+	 </div>
+</div>
+<div class="col-md-4">
+	<div class="card">
+		<a href="news-page3.html">
+		<img class="card-img-top" src="resim/Haber_Gorsel_03.png"></a>
+		<div class="card-body"> 
+			<p class="card-title">OUR MENTORS WHO CONTRIBUTE TO THE TEAM</p>
+			<h3 class="card-text">OUR MENTORS</h3>
+		</div>
+ </div>
+</div>
+			
+		</div>
+		
+	</div>
+
+<!--- resim ekranı -->
+
+<div id="slides" class="carousel-slide" data-ride="carousel">
+	<!-- <ul class="carousel-indicators">
+		<li data-target="slides" data-slide-to="0" class="active"></li>
+	</ul> -->
       
-  <nav class="footer-link">
-        <a href="https://discord.com/" class="footer-link">
-            <img src="resim/resim/discord.png">
-        </a>
-        <a href="https://www.facebook.com/" class="footer-link">
-            <img src="resim/resim/facebook.png">
-        </a>
-        <a href="https://www.instagram.com/" class="footer-link">
-            <img src="resim/resim/instagram.png">
-        </a>
-        <a href="https://twitter.com/" class="footer-link">
-            <img src="resim/resim/twitter.png">
-        </a>
-        <a href="https://www.youtube.com/?hl=TR" class="footer-link">
-            <img src="resim/resim/youtube.png">
-        </a>
-        <a href="https://www.linkedin.com/" class="footer-link">
-            <img src="resim/resim/linkedin.png">
-        </a>
-        <a href="https://www.tiktok.com/" class="footer-link">
-            <img src="resim/resim/tiktok.png">
-        </a>
-</nav>
+	<div class="carousel-inner">
+	<div class="carousel-item active">
+	<img src="resim/Main_02_Gorsel.png">
+	<div class="carousel-caption">
+		<a href="https://store.steampowered.com/app/2657160/ROSE"><img src="resim/Wishlist Button1.png"></a>
+	</div>
+	</div>
+   
+	</div>
+   
+</div>
 
-      <nav class="footer-logos">
-        
-          <img src="resim/resim/Rise Logo.png">
-         
 
-          <img src="resim/resim/Rose Logo.png">
-          
-          
-          <img src="resim/resim/unreal.png">
-          
+<!--- yazı ekranı -->
+<div class="container" id="about">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<img src="resim/Main_03_Gorsel.png" class="img-fluid">
+		</div>
+		<div class="col-md-12 col-lg-6">
+			<h2 class="display-3">DISCOVER THIS WORLD</h2><br>
+			<h4> The government called Red Cobra takes over theworld. A journalist trying to escape from this war loses his daughter.
+				 Enter this world to find your daughter and escape the war.</h4><br>
+
+				<a href="https://store.steampowered.com/app/2657160/ROSE"><img src="resim/Wishlist Button1.png"></a>
+			
+			
+		</div>
+	</div>
+</div>
+
+<!--- resim ekranı -->
+
+<div id="slides" class="carousel-slide" data-ride="carousel">
+	<!-- <ul class="carousel-indicators">
+		<li data-target="slides" data-slide-to="0" class="active"></li>
+	</ul> -->
       
-          <img src="resim/resim/steam.png">
-          
-       
-          <img src="resim/resim/epic_game.png">
-         
+	<div class="carousel-inner">
+	<div class="carousel-item active">
+	<img src="resim/Main_04_Gorsel.png">
+	<div class="carousel-caption">
+		<a href="https://store.steampowered.com/app/2657160/ROSE"><img src="resim/Wishlist Button1.png"></a>
+	</div>
+	</div>
+   
+	</div>
+   
+</div>
+
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding" id="social">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h4>Join Us On</h4>
+		</div>
+		<div class="col-12 social padding">
+		<a href=https://discord.gg/Bqy5AQecJs><i class="fab fa-discord"></i></a>
+		<a href="https://www.reddit.com/user/RiseStudio/"><i class="fab fa-reddit"></i></a>
+		<a href="https://www.instagram.com/risegamestudio/"><i class="fab fa-instagram"></i></a>
+		<a href="https://twitter.com/risegamesstudio">
+			<svg viewBox="0 0 23 23" version="1.1" height="0.89em">
+				<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#ffffff"></path>
+			  </svg></a>
+		<a href="https://www.youtube.com/channel/UCSJcYl6VdctmkYLv6vPyEew"><i class="fab fa-youtube"></i></a>
+		<a href="https://www.linkedin.com/in/rise-studio-080a8b259/"><i class="fab fa-linkedin"></i></a>
+		<a href="https://www.tiktok.com/@risestudiogame?ug_source=op.auth&ug_term=Linktr.ee&utm_source=awyc6vc625ejxp86&utm_campaign=tt4d_profile_link&_r=1"><i class="fab fa-tiktok"></i></a>
+	</div>
+</div>
+</div>
+
+<div class="container-fluid padding">
+		<div class="col-md-12 logo">
+			<a href="index.html"><img src="resim/Rise Logo.png"></a>
+			<a href="index.html"><img src="resim/Rose Logo.png"></a>
+			<a href="https://unrealengine.com/"><img src="resim/unreal.png"></a>
+			<a href="https://store.steampowered.com/app/2657160/ROSE"><img src="resim/steam.png"></a>
+			<a href="https://store.epicgames.com/"><img src="resim/epic_game.png"></a>
+		</div>
+
+</div> 
+
+
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+	<div class="col-md-12">
+		<h4>Contact Us:</h4>
+	</div>
+	<div class="col-md-12">
+		<h5>Ataköy 7-8-9-10, E5 Karayolu Üzeri Ataköy Yerleşkesi, 34158 Bakırköy</h5>
+        <h5>rosevideogame.com</h5>
+	</div>
+</div>
+<div class="col-12">
+		<p class="float-left">
+			<h7>&copy; 2023 RISE STUDIO,Inc,All Rights Reserved.</h7></p>
+			<p class="float-right">
+			<h7>TERMS OF USE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRIVACY POLICY</h7></p>
       
-      </nav>
-      <a class="footer-contactus">
-        <p>Contact Us:</p>
-      </a>
+</div>
 
-      <a class="footer-email">
-        <p>Buraya adres ve Iletişim bilgileri</p>
-        <p>E-Mail: Info@Risestudio.com</p>
-      </a>
+</div>
+</footer>
 
-      <div class="footer-design">
-        <p>© 2023 RISE STUDIO,Inc,All Rights Reserved.</p>
-        <p>TERMS OF USE     |     PRIVACY POLICY</p>
-      </div>
-  </section>
-  
+</body>
+</html>
+
+<!-- View in Browser -->
+
+<!-- End View in Browser -->
