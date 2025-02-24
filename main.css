@@ -1,0 +1,495 @@
+:root {
+    --main-color: #111111;
+    --light-color: #D9D9D9;
+    --side-color: #BC3814;
+    --black: #000;
+    --white: #fff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Play";
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* navbar */
+
+.header {
+    background: transparent;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    transition: ease 400ms;
+  }
+
+  .navbar-wrapper {
+    height: 7vh;
+    padding-top: 1vw;
+    margin-left: 4vw;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* margin: 1vw; */
+   
+  }
+
+  .menu-list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+    z-index: 5;
+    right: 2%;
+    gap: 4rem;
+  }
+ 
+  .menu-list a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+  /* .navbar-link {
+    height: 5vh;
+    display: none;
+    position: relative;
+    width: 400px;
+    text-align: center;
+  }
+   */
+
+   /* Responsive */
+
+   .header {
+    height: auto;
+    width: 100%;
+    z-index: 5;
+    position: block;
+    background-color: #030303c0;
+  }
+
+  .navbar-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-items: center;
+    z-index: 6;
+  }
+
+  .menu-list {
+    position: absolute;
+    right: 20%;
+    transform: translateX(50%);
+    /* flex-direction: column; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 33%; */
+    z-index: 8;
+    padding-right: 0;
+  }
+   /* navbar */
+
+   /* giriş ekranı */
+
+    .main-screen {
+      height: 100%;
+      overflow: hidden;
+      transform: scale(1);
+      user-select: none;
+      cursor: pointer;
+      background-color: var(--black);
+      position: relative; 
+    
+      }
+         
+      .mainscreenContainer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+              
+      }
+
+      .mainscreenContainer img {
+        max-width: 100%;
+        max-height: 100%; 
+        width: auto;
+        height: auto;
+      }
+
+      .mainscreens-link {
+        position: absolute;
+        height: 6vh;
+        top: 51vw; 
+        left: 49vw;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+      }
+      
+   /* giriş ekranı */
+
+   /* oyun sayfası */
+
+   .GameMain {
+    position: relative;
+    /* top: 20vh; */
+    background-color: var(--main-color);
+    margin: 0;
+    height: 70vh;
+    width: 100%;
+    padding-top: 2.5vw;
+  }
+
+  .GameHeader {
+   
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xx-large;
+    color: var(--light-color);
+    text-align: center;
+  }
+  
+  .Game {
+    list-style-type: none;
+    font-size: 135%;
+    padding: 10px;
+    /* width: 100%; */
+    display: grid;
+    grid-template-rows: 15vw;
+    grid-template-columns: repeat(auto-fill, 20vw);
+    margin-left: 15vw;
+  }
+  
+  .GamePic {
+   
+    width: 400px;
+    height: 100px;
+    color: var(--light-color);
+    line-height: 70px;
+    margin: 50px;
+    padding: 20px 111px;
+    
+  }
+
+  .GamePicFrame {
+    margin: auto;
+    width: 180px;
+    height: 180px;
+  }
+
+  @media screen and (max-width: 862px) {
+    .GameMain {
+      background-color: #d4d9df;
+      background-size: 100%;
+      padding-top: 2vh;
+      padding-bottom: 3vh;
+      transition: 1s all;
+    }
+
+    .GameHeader {
+      text-decoration: none;
+  
+      font-size: 10px;
+      transition: 1s all;
+      margin-left: 7%;
+    }
+  
+    .Game {
+      width: 100%;
+      height: 90%;
+      display: grid;
+      justify-content: center;
+    }
+  
+    .GamePic {
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      line-height: 25px;
+      margin: 2px;
+      padding: 5px 46px;
+      transition: 1s all;
+    }
+
+    .GamePicFrame {
+      margin: auto;
+      background-color: var(--white);
+      /* width: 90px;
+      height: 90px; */
+      transition: 1s all;
+    }
+  
+    }
+  
+   /* oyun sayfası */
+
+   /* resim ekranı */
+
+   .main-screen-pic {
+    height: 100%;
+      overflow: hidden;
+      transform: scale(1);
+      user-select: none;
+      cursor: pointer;
+      background-color: var(--black);
+      position: relative; 
+    
+   }
+
+   .container-screen2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+   }
+
+   .container-screen2 img {
+    max-width: 100%;
+    max-height: 100%; 
+    width: auto;
+    height: auto;
+  }
+
+   .mainscreens-link2 {
+    position: absolute;
+    top: 51vw; 
+    left: 49vw;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+  }
+   
+   /* resim ekranı */
+
+   /* tanıtım */ 
+
+   .introducing--section {
+    position: relative;
+    background-color: var(--main-color);
+    margin: 0;
+    height: 70vh;
+    /* width: 100%; */
+    /* padding-top: 1.5vw; */
+   }
+
+   .introducing--content{
+    /* display: flex; */
+    color: var(--light-color);
+    margin-left: 43vw;
+    padding: 12vw;
+    margin-right: 12vw;
+   }
+
+   .introducing--content h1 {
+    margin-left: 4vw;
+    font-size: 302%;
+    font-weight: bolder;
+    color: var(--light-color);
+    text-align: center;
+    margin-top: -7vw;
+   }
+
+   .introducing--content p {
+    margin-top: 3vw;
+    font-size: 178%;
+    transform: translate(10%, -7%); 
+    text-align: center;
+    
+   }
+
+   .mainscreens-link3 {
+    position: absolute;
+    height: 7.5vh;
+    top: 29vw; 
+    left: 67vw;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+   }
+
+   .introducing--img {
+     position: absolute;
+    /* right: 200px; */
+    top: 10vh; 
+    float: left;
+    /* display: inline; */
+    height: 50vh;
+    display: flex;
+    margin-left: 5vw;
+   }
+
+   @media only screen and (max-width: 1465px) {
+    .introduction--section {
+      padding-top: 3rem;
+    }
+  
+    .introduction--content {
+      width: 80%;
+      position: relative;
+      left: 56%;
+      transform: translateX(-50%);
+      margin: 0;
+    }
+  }
+
+    @media only screen and (max-width: 950px) {
+      .introduction--section {
+        height: 700px;
+      }
+      .introduction--content h1 {
+        font-size: small;
+      }
+      .introduction--content p {
+        font-size: small;
+      }
+    }
+
+      @media only screen and (max-width: 700px) {
+        .introduction--section {
+          height: auto;
+        }
+        .introduction--content {
+          border: 0;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+        }
+      }
+   /* tanıtım */
+
+   /* resim ekranı2 */
+
+   .main-screen-pic1 {
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1);
+    user-select: none;
+    cursor: pointer;
+    background-color: var(--black);
+    position: relative; 
+  }
+  
+  .container-screen3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .container-screen3 img {
+    max-width: 100%;
+    max-height: 100%; 
+    width: auto;
+    height: auto;
+  }
+  
+  .mainscreens-link4 {
+    position: absolute;
+    top: 51vw; 
+    left: 49vw;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+  }
+   /* resim ekranı2 */
+
+   /* footer */
+   
+.footer_content {
+    overflow: hidden;
+    /* position: relative; */
+    width: 100%;
+    text-decoration: none;
+    z-index: 20;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  background-color: var(--main-color);
+ 
+  }
+
+  .footer-join {
+    color: var(--white);
+    position: relative;
+    top: 30px;
+    text-align: center;
+    width: 300px;
+    margin-left: 41.5vw;
+    font-size: 178%;
+  }
+
+  .footer-link {
+    /* display: flex; */
+    margin-top: 4vw; 
+    /* margin-left: 2vw;
+    margin-bottom: 2vw;  */
+}
+
+.footer-link a {
+    /* display: flex;  */
+    margin: 0 ; 
+}
+
+.footer-link img {
+    width: 50px;
+    margin-left: 5vw;
+}
+
+
+.footer-logos {
+    display: flex;
+    font-size: x-large;
+    transition: ease 400ms;
+    text-align: center;
+    height: 12vh;
+    padding:0;
+    margin: 6vw;
+    margin-left: 8vw;
+    gap: 4rem;
+
+}
+
+.footer-contactus {
+    color: var(--white);
+    position: relative;
+    left: 10px;
+    top: 7vw;
+    text-align: center;
+    width: 300px;
+    font-size: 178%;
+}
+
+.footer-email {
+  color: var(--white);
+  top: 10vw;
+  position: relative;
+  left: 10px;
+  text-align: center;
+  width: 300px;
+  font-size: 178%;
+}
+
+.footer-design {
+    color: var(--white);
+    display: flex;
+    position: relative;
+    left: 0;
+    font-size: 140%;
+    /* right: 10px; */
+    top: 8vw;
+    margin: 10vw;
+    justify-content:space-between;
+    padding-left: 10px;
+  }
+
+   /* footer */
+
+   
