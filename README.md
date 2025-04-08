@@ -1,2 +1,2 @@
-# To see the design website I developed live:
+# To see the design ROSE VIDEO GAME website I developed live:
 https://rosevideogame.com/
